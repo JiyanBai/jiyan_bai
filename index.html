@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jiyan Bai, Ph.D. candidate in Economics at the University at Albany, SUNY. Research in macroeconomics, labor economics and search theory.">
+  <title>Jiyan Bai | Economics</title>
+  <style>
+    :root { color-scheme:light; --text:#20262c; --muted:#5a646c; --link:#245776; --line:#e2e5e7; --surface:#fff; --secondary:#3e4950; --nav:#444e57; --abstract:#38444c; --width:920px; }
+    html[data-theme="dark"] { color-scheme:dark; --text:#e9eef2; --muted:#b2bdc6; --link:#91c7e9; --line:#36424c; --surface:#151a1f; --secondary:#c4cdd5; --nav:#c7d0d8; --abstract:#d4dde4; }
+    @media (prefers-color-scheme: dark) { html:not([data-theme="light"]):not([data-theme="dark"]) { color-scheme:dark; --text:#e9eef2; --muted:#b2bdc6; --link:#91c7e9; --line:#36424c; --surface:#151a1f; --secondary:#c4cdd5; --nav:#c7d0d8; --abstract:#d4dde4; } }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--surface);color:var(--text);transition:background-color .18s,color .18s;font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}a:focus-visible,summary:focus-visible{outline:2px solid var(--link);outline-offset:4px}
+    .container{max-width:var(--width);margin:auto;padding:0 30px}
+    .header-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+    .theme-toggle{font:inherit;font-size:13px;line-height:1.2;display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--text);padding:9px 11px;cursor:pointer;white-space:nowrap}
+    .theme-toggle:hover{border-color:var(--link)}.theme-toggle:focus-visible{outline:2px solid var(--link);outline-offset:3px}
+    .theme-toggle svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .theme-toggle .moon-icon{display:none}html[data-theme="dark"] .theme-toggle .sun-icon{display:none}html[data-theme="dark"] .theme-toggle .moon-icon{display:block}
+    @media (prefers-color-scheme:dark){html:not([data-theme="light"]):not([data-theme="dark"]) .theme-toggle .sun-icon{display:none}html:not([data-theme="light"]):not([data-theme="dark"]) .theme-toggle .moon-icon{display:block}}
+    header{border-bottom:1px solid var(--line)}header .container{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:21px;padding-bottom:21px}
+    .brand{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:22px;color:var(--text)}
+    nav{display:flex;gap:20px;flex-wrap:wrap}nav a{font-size:14px;color:var(--nav)}
+    main{padding-top:52px;padding-bottom:76px}
+    .intro{display:grid;grid-template-columns:215px minmax(0,1fr);gap:48px;align-items:start;padding-bottom:45px;border-bottom:1px solid var(--line)}
+    .headshot{width:215px;height:270px;object-fit:cover;object-position:center 33%;display:block;border-radius:2px}
+    h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;line-height:1.25}
+    h1{font-size:40px;margin:0 0 8px}h2{font-size:26px;margin:0 0 23px}h3{font-size:16px;margin:0;font-weight:650;line-height:1.5}
+    .affiliation{font-size:17px;color:var(--secondary);margin:0 0 20px}.intro p{margin-top:0;margin-bottom:13px}.interests{color:var(--muted)}
+    .intro .bio{text-align:justify;text-justify:inter-word;hyphens:auto;overflow-wrap:break-word}
+    .quick-links{display:flex;gap:10px 22px;flex-wrap:wrap;margin-top:18px;font-size:14px;font-weight:600}
+    section{padding-top:41px;scroll-margin-top:20px} .paper{margin-bottom:27px}.eyebrow{font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+    .paper-title{font-size:17px}.paper-links{font-size:14px;margin:7px 0 0;display:flex;gap:20px;flex-wrap:wrap}.paper-details{margin-top:12px;border-left:2px solid var(--line);padding-left:17px}
+    summary{color:var(--link);cursor:pointer;font-size:14px;display:inline-block;list-style:none}summary::-webkit-details-marker{display:none}summary::after{content:' +'}details[open] summary::after{content:' −'}
+    .abstract{font-size:15px;color:var(--abstract);line-height:1.75;margin:12px 0 0;max-width:760px;text-align:justify;text-justify:inter-word;hyphens:auto;overflow-wrap:break-word}
+    .item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 18px;margin:0 0 21px;align-items:baseline}.item p{color:var(--muted);font-size:14px;margin:3px 0 0;line-height:1.6}.date{font-size:13px;color:var(--muted);white-space:nowrap}
+    .small-note{font-size:14px;color:var(--muted)}.subheading{font-size:15px;font-weight:650;margin:21px 0 12px}footer{border-top:1px solid var(--line);font-size:13px;color:var(--muted);padding:22px 0 34px}
+    @media(max-width:720px){.container{padding:0 21px}header .container{align-items:flex-start;flex-direction:column;gap:9px}nav{gap:7px 17px}.header-actions{gap:12px}main{padding-top:30px}.intro{grid-template-columns:145px minmax(0,1fr);gap:22px;padding-bottom:31px}.headshot{width:145px;height:184px}h1{font-size:32px}.affiliation{font-size:15px}.intro .bio,.intro .interests,.quick-links{grid-column:1/-1}.intro-content{display:contents}.intro-heading{grid-column:2;align-self:center}.item{grid-template-columns:1fr}.date{white-space:normal}section{padding-top:32px}}
+    @media(max-width:720px){.intro .bio,.abstract{text-align:left;hyphens:none}}
+    @media(max-width:390px){.intro{grid-template-columns:120px minmax(0,1fr);gap:16px}.headshot{width:120px;height:155px}h1{font-size:29px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+  <script>
+    (function () {
+      try { var saved = localStorage.getItem('jiyan-site-theme'); if(saved==='light'||saved==='dark') document.documentElement.dataset.theme=saved; } catch(e) {}
+    })();
+  </script>
+</head>
+<body>
+<header><div class="container"><a class="brand" href="#top">Jiyan Bai</a><nav aria-label="Main navigation"><a href="#about">About</a><a href="#research">Research</a><a href="#experience">Experience</a><a href="#teaching">Teaching</a><a href="assets/Jiyan_Bai_CV.pdf" target="_blank" rel="noopener">CV</a></nav><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+<svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z"/></svg>
+<svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+<span id="theme-label">Dark mode</span></button></div></header>
+<main class="container" id="top">
+  <div class="intro" id="about">
+    <img class="headshot" src="assets/Jiyan_Bai_Headshot.jpg" alt="Portrait of Jiyan Bai" width="215" height="270">
+    <div class="intro-content">
+      <div class="intro-heading"><h1>Jiyan Bai</h1></div>
+      <p class="bio">I am a Ph.D. candidate in Economics at the University at Albany, SUNY. I will be on the academic job market during the 2026–2027 academic year.</p>
+      <p class="bio">My research examines how workers’ social comparison behavior interacts with job search decisions, shaping reservation wages, job mobility, wage dispersion, and aggregate labor-market outcomes. I use longitudinal survey data and panel econometric methods to quantify the role of wage rank in job satisfaction. I then develop and calibrate a theoretical on-the-job search model with endogenous search effort and rank-dependent utility to study the implications for unemployment, wage inequality, and social welfare.</p>
+      <p class="interests"><strong>Research interests:</strong> Macroeconomics, Labor Economics, Search Theory, Wage Dispersion and Inequality, Behavioral Economics.</p>
+      <div class="quick-links"><a href="assets/Jiyan_Bai_Job_Market_Paper.pdf" target="_blank" rel="noopener">Job Market Paper</a><a href="assets/Jiyan_Bai_CV.pdf" target="_blank" rel="noopener">CV</a></div>
+    </div>
+  </div>
+  <section id="research"><h2>Research</h2>
+    <article class="paper"><p class="eyebrow">Job Market Paper</p><h3 class="paper-title"><a href="assets/Jiyan_Bai_Job_Market_Paper.pdf" target="_blank" rel="noopener">Rank Matters: On-the-Job Search Model with Social Comparison Behavior</a></h3>
+      <div class="paper-details"><details id="paper-abstract"><summary>Read abstract</summary><p class="abstract">This paper studies how workers’ ordinal wage-rank concerns affect individual search behavior and labor-market outcomes. Using the National Longitudinal Survey of Youth 1997, I show that among similar workers, a 10 percentage point deterioration in wage rank requires approximately a 13 percent wage increase to keep predicted job satisfaction unchanged. I extend an on-the-job search model with endogenous search effort to study the aggregate implications of this comparison behavior. In the model, stronger rank concerns make low-wage jobs less attractive while increasing the option value of search across wages. As a result, rank concerns raise reservation wages and strengthen search incentives. In equilibrium, however, the higher reservation threshold reduces the set of acceptable offers, lowers aggregate job mobility, increases unemployment, compresses accepted-wage dispersion, and reduces social welfare. In a counterfactual exercise where the offer wage dispersion becomes more unequal while the mean offer wage is preserved, rank concerns partially mitigate the adverse mobility effects for low-wage workers by raising the lower bound of accepted wages, while amplifying the welfare gains from a thicker upper tail.</p></details></div>
+    </article>
+    <p class="eyebrow">Works in Progress</p>
+    <article class="paper"><h3>Comparison Behavior, Fairness, and On-the-Job Search Model</h3></article>
+    <article class="paper"><h3>Comparison Behavior and Noisy Search</h3></article>
+    <article class="paper"><h3>Dental Hygiene Educational Pipeline and Workforce Capacity</h3><p class="small-note">With Simona Surdu and Jinman Pang</p></article>
+  </section>
+  <section id="experience"><h2>Research &amp; Professional Experience</h2>
+    <div class="item"><div><h3>Graduate Research Assistant</h3><p>Center for Health Workforce Studies, College of Integrated Health Sciences, University at Albany, SUNY · Research on dental hygiene education programs and workforce capacity.</p></div><span class="date">Oct 2025–Present</span></div>
+    <div class="item"><div><h3>Data Analyst Intern</h3><p>New York State Office of Mental Health · Medicaid claims analysis, service utilization, expenditure trends, and statistical modeling.</p></div><span class="date">Aug 2025–Sep 2026</span></div>
+    <div class="item"><div><h3>Business Analyst Intern</h3><p>New York State Department of Taxation and Finance · Research and comparative analysis of federal and state income-tax audit practices.</p></div><span class="date">2020–2022</span></div>
+  </section>
+  <section id="teaching"><h2>Teaching</h2>
+    <div class="item"><div><h3>Instructor · International Economic Relations (ECO 360)</h3><p>University at Albany, SUNY</p></div><span class="date">Spring 2025</span></div>
+    <div class="item"><div><h3>Instructor · Money and Banking (ECO 350)</h3><p>University at Albany, SUNY</p></div><span class="date">Spring 2025, Spring 2023</span></div>
+    <div class="item"><div><h3>Instructor · Principles of Economics (Macro) (ECO 111)</h3><p>University at Albany, SUNY</p></div><span class="date">Fall 2024, Winter 2022</span></div>
+    <div class="item"><div><h3>Teaching Assistant · Macroeconomics (ECO 501)</h3><p>University at Albany, SUNY</p></div><span class="date">Fall 2018</span></div>
+  </section>
+  <section id="education"><h2>Education</h2>
+    <div class="item"><div><h3>Ph.D. in Economics</h3><p>University at Albany, SUNY, NY</p></div><span class="date">2018–Present</span></div>
+    <div class="item"><div><h3>M.A. in Finance</h3><p>University of La Verne, CA</p></div><span class="date">2014–2016</span></div>
+    <div class="item"><div><h3>B.A. in International Trade and Finance</h3><p>Jincheng College, China</p></div><span class="date">2009–2013</span></div>
+  </section>
+  <section id="awards"><h2>Presentations &amp; Awards</h2>
+    <div class="item"><div><h3>UAlbany Showcase · Poster Presentation</h3><p>Rank Matters: On-the-Job Search Model with Social Comparison Behavior</p></div><span class="date">2026</span></div>
+    <div class="item"><div><h3>Helen Horowitz Teaching Award</h3><p>Department of Economics, University at Albany, SUNY</p></div><span class="date">2025</span></div>
+    <div class="item"><div><h3>Laboratory for Aggregate Economics and Finance Conferences</h3><p>Demographics and the Macroeconomy (2025); Labor Markets and Macroeconomic Outcomes (2022)</p></div><span class="date">2022, 2025</span></div>
+  </section>
+  <section id="development"><h2>Professional Development</h2>
+    <div class="item"><div><h3>CFA Program — Level III Candidate</h3><p>CFA Institute</p></div></div>
+  </section>
+</main>
+<footer><div class="container">© 2026 Jiyan Bai · University at Albany, SUNY</div></footer>
+<script>
+  const themeButton=document.getElementById('theme-toggle');
+  const themeLabel=document.getElementById('theme-label');
+  const systemDark=window.matchMedia('(prefers-color-scheme: dark)');
+  function isDark(){const explicit=document.documentElement.dataset.theme;return explicit==='dark'||(explicit!=='light'&&systemDark.matches)}
+  function syncThemeButton(){const dark=isDark();themeLabel.textContent=dark?'Light mode':'Dark mode';themeButton.setAttribute('aria-label',dark?'Switch to light mode':'Switch to dark mode');themeButton.setAttribute('aria-pressed',String(dark))}
+  themeButton.addEventListener('click',function(){const next=isDark()?'light':'dark';document.documentElement.dataset.theme=next;try{localStorage.setItem('jiyan-site-theme',next)}catch(e){}syncThemeButton()});
+  if(systemDark.addEventListener)systemDark.addEventListener('change',syncThemeButton);
+  syncThemeButton();
+</script>
+</body>
+</html>
